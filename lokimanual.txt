@@ -29,8 +29,6 @@ ________________________
 java install
 apt-get install default-jre default-jdk -y
 apt-get install ia32-libs lib32z1 lib32ncurses5 -y
-dpkg --add-architecture i386
-apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386 lib32z1 lib32ncurses5
 ______________________________________
 install botnet
 mysql -u root -p
