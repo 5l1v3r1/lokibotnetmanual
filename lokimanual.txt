@@ -28,9 +28,9 @@ apt install sudo apt-get install php5.6 php5.6-mysql php5.6-gd php5.6-mcrypt php
 service apache2 restart
 _____________________________________________________
 apktool install
-git clone https://github.com/h4ckti2/apktool
-cd apktool
-chmod 777 *.*
+git clone https://github.com/h4ckti2/apktool-2
+cd apktool-2
+chmod 755 *.*
 mv *.* /usr/local/bin/
 mv apktool /usr/local/bin
 cd ~
