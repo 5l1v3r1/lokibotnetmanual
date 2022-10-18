@@ -34,6 +34,7 @@ chmod 777 *.*
 mv *.* /usr/local/bin/
 mv apktool /usr/local/bin
 cd ~
+chmod 755 /usr/local/bin/apktool
 ________________________
 java install
 apt-get install default-jre default-jdk -y
