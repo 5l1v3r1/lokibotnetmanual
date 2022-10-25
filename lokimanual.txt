@@ -14,7 +14,7 @@ apt install sudo
 _____________________________________________________
 apt update
 apt install apache2
-apt-get install -y mysql-server
+apt-get install -y mysql-server / sudo apt-get install mariadb-server
 service mysql stop
 service mysql start
 cd /var/run
